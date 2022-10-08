@@ -1,0 +1,171 @@
+body {
+    background-image: radial-gradient(rgb(0, 10, 66), rgb(0, 0, 17));
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+nav {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 3%;
+    height: 100px;
+    width: fit-content;
+}
+
+nav span {
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: "Bungee", cursive;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#welcome-btn {
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    width: fit-content;
+	padding: .8em 2em;
+	cursor: pointer;
+
+	background: #FFFFFF;
+	border: none;
+	border-radius: .4em;
+
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+}
+
+#welcome-btn:hover {
+    animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+    50% {transform: translateY(-50%)}
+    100% {transform: translateY(0%);}
+}
+
+@keyframes move-right {
+    0% {margin-right: 0; background-image: url("./public/photos/walk-right-1.png");}
+    6.6% {background-image: url("./public/photos/walk-right-2.png");}
+    13.2% {background-image: url("./public/photos/walk-right-3.png");}
+    19.8% {background-image: url("./public/photos/walk-right-4.png");}
+    26.4% {background-image: url("./public/photos/walk-right-5.png");}
+    33% {margin-right: 33%; background-image: url("./public/photos/walk-right-1.png");}
+    39.6% {background-image: url("./public/photos/walk-right-2.png");}
+    46.2% {background-image: url("./public/photos/walk-right-3.png");}
+    52.8% {background-image: url("./public/photos/walk-right-4.png");}
+    59.4% {background-image: url("./public/photos/walk-right-5.png");}
+    66% {margin-right: 66%; background-image: url("./public/photos/walk-right-1.png");}
+    72.6% {background-image: url("./public/photos/walk-right-2.png");}
+    79.2% {background-image: url("./public/photos/walk-right-3.png");}
+    85.8% {background-image: url("./public/photos/walk-right-4.png");}
+    92.4% {background-image: url("./public/photos/walk-right-5.png");}
+    100% {margin-right: 90%; background-image: url("./public/photos/sprite-idle.png");}
+}
+
+.character-track {
+    background-color: transparent;
+    height: 64px;
+    margin-top: 40vh;
+    transform: translateX(100%);
+    width: 50%;
+}
+
+.character {
+    background-image: url("./public/photos/walk-right-1.png");
+    background-size: cover;
+    display: none;
+    height: 64px;
+    width: 64px;
+    float: right;
+}
+
+#dialog {
+    display: none;
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+
+#dialog-bubble-1 {
+    display: none;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 47%;
+}
+
+#dialog-bubble-2 {
+    display: none;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: 52%;
+}
+
+#dialog-text {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#typewriter {
+    animation: blinker 1s linear infinite;
+}
+
+#form-entry {
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}
+
+#form-entry input, #form-entry select {
+    border: none;
+    color: white;
+    background-color: rgba(114, 139, 207, 0.63);
+    padding: 1rem 2rem;
+}
+
+#form-entry input::placeholder {
+    color: white;
+}
+
+#form-entry button {
+    border: none;
+    background-color:  rgb(114, 139, 207);
+    color: white;
+    margin: 7px 0 7px 10px;
+    padding: .6rem;
+}
+
+@keyframes blinker {
+    50% {opacity: 0;}
+}

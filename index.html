@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melissa's Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <nav>
+        <a href="#">About</a><span>|</span>
+        <a href="#">Projects</a><span>|</span>
+        <a href="#">Contact</a>
+      </nav>
+    <div id="dialog">
+        <span id="dialog-text"></span>
+    </div>
+    <div id="dialog-bubble-1"></div>
+    <div id="dialog-bubble-2"></div>
+    <button type="button" name="welcome-btn" id="welcome-btn">Start</button>
+    <div class="character-track">
+        <div id="character" class="character"></div>
+    </div>
+    <div id="form-entry">
+        <form id="name-prompt" style="display: flex;">
+            <input type="text" id="name" name="name" placeholder="Enter your name.">
+            <button type="submit"><i class="material-icons" style="font-size: 18px; font-weight: bold">arrow_forward</i></button>
+        </form>
+        <form action="" id="response-prompt" style="display: none;">
+            <select id="response" name="response">
+                <option value="" disabled selected>Choose a response</option>
+                <option value="about">I want to get to know you.</option>
+                <option value="contact">Contact info, please.</option>
+                <option value="projects">Can I see some of your work?</option>
+                <option value="other">Something else.</option>
+            </select>
+            <button type="submit"><i class="material-icons" style="font-size: 18px; font-weight: bold">arrow_forward</i></button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
