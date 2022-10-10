@@ -48,11 +48,11 @@ a {
 }
 
 #welcome-btn:hover {
-    animation: bounce 1s ease;
+    animation: bounce 200ms ease;
 }
 
 @keyframes bounce {
-    50% {transform: translateY(-50%)}
+    50% {transform: translateY(-30%)}
     100% {transform: translateY(0%);}
 }
 
@@ -132,6 +132,14 @@ a {
     margin: auto;
     text-align: center;
     padding: 0 30px;
+}
+
+#click-to-skip {
+    color: rgba(255, 255, 255, 0.39);
+    display: none;
+    margin: auto;
+    margin-top: 1.5rem;;
+    text-align: center;
 }
 
 #typewriter {
